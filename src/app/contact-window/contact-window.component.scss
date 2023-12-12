@@ -1,0 +1,89 @@
+#contact_info{
+    width: 12%;
+    height: 10%;
+    background-color: #e8e7de;
+    position: absolute;
+    top: 10%;
+    left: 42.5%;
+    z-index: 5;
+}
+
+#contact_bl{
+    height: 180%;
+    width: 200%;
+    position: absolute;
+    bottom: -17.5%;
+    left: -8.4%;
+}
+#contact_br{
+    height: 180%;
+    width: 200%;
+    position: absolute;
+    bottom:-17.5%;
+    right: -8.4%;
+    transform: scaleX(-1);
+}
+#contact_bd{
+    height: 150%;
+    width: 380%;
+    position: absolute;
+    bottom: -15%;
+    left: -18%;
+}
+#contact_top{
+    height: 100%;
+    width: 110%;
+    position: absolute;
+    top: -30.6%;
+    z-index: 6;
+    left: -5.3%;
+}
+
+#contact_title{
+    font-family: Tahoma;
+    position: absolute;
+    color: white;
+    left: 2%;
+    top: -20%;
+    z-index: 7;
+}
+#name{
+    font-family: Tahoma;
+    position: absolute;
+    color: black;
+    left: 3%;
+    top: 15%;
+    z-index: 7;
+    font-weight: bold;
+}
+
+#email{
+    font-family: Tahoma;
+    position: absolute;
+    color: black;
+    left: 3%;
+    top: 35%;
+    z-index: 7;
+    font-weight: bold;
+}
+
+#github{
+    font-family: Tahoma;
+    font-weight: bold;
+    position: absolute;
+    text-decoration: underline;
+    color: blue;
+    left: 3%;
+    top: 65%;
+    z-index: 7;
+}
+
+#close2{
+    position: absolute;
+    bottom: 100%;
+    left: 95.8%;
+    width: 4%;
+    height: 4%;
+    z-index: 3;
+    margin: 0;
+}

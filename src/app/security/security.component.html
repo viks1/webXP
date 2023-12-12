@@ -1,0 +1,18 @@
+<img id="security" src="assets/images/security.png" height="30" width="31" (click)="toggleSecurityWindow()"/>
+<div id="security_window" [hidden]="isSecurityWindowHidden">
+    <img id="security_background" src="assets/images/security_background.png" height="165" width="336"/>
+    <img id="window_one" src="assets/images/window_one2.png" height="238" width="538"/>
+    <img id="security_bl" src="assets/images/window_border_lr.png" height="238" width="538"/>
+    <img id="security_br" src="assets/images/window_border_lr.png" height="238" width="538"/>
+    <img id="security_bd" src="assets/images/window_border_down.png" height="238" width="538"/>
+    <span id="security_title">Security Essentials</span>
+    <span id="security_title2">Requires your attention</span>
+    <span id="security_text">
+        Support for this operating system is ending. When this occurs Security Essentials will no longer be supported and your PC might be unprotected. To make sure your PC stays protected, click the link below to see our end-of-support guidance for operating systems.
+    </span>
+    <a href="https://support.microsoft.com/en-us/windows/windows-xp-support-has-ended-47b944b8-f4d3-82f2-9acc-21c79ee6ef5e"
+       target="_blank" id="security_hyper">End-of-support guidance for operating systems</a>
+    <div class="winXP-wrap">
+        <input class="winXP-btn" type="button" value="Close" (click)="hideSecurityWindow()"/>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+#taskbar_blue{
+    z-index: 9;
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    min-height:39.8px;
+    height: 3.6%;
+}
+
+#taskbar_end{
+    z-index: 9;
+    position: fixed;
+    bottom: 0%;
+    right: 0%;
+    height: 3.45%;
+    min-height: 39.8px;
+    width: 8.8%;
+}

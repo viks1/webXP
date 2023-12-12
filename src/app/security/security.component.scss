@@ -1,0 +1,117 @@
+#security {
+    position: fixed;
+    right: 6.1%;
+    bottom: 5px;
+    z-index: 10;
+  }
+  
+  #security_background,
+  #window_one,
+  #security_bl,
+  #security_br,
+  #security_bd {
+    position: fixed;
+    bottom: 1.32%;
+    z-index: 1;
+  }
+  
+  #security_background {
+    right: 0.7%;
+    width: 18%;
+    height: 18%;
+    min-width: 362px;
+    min-height: 122px;
+  }
+  
+  #window_one {
+    right: 0%;
+    width: 19.7%;
+    height: 14%;
+    min-height: 95px;
+    min-width: 397px;
+  }
+  
+  #security_bl {
+    right: -7.98%;
+    width: 28%;
+    height: 30%;
+    min-width: 556px;
+  }
+  
+  #security_br {
+    right: -0.4%;
+    width: 28%;
+    height: 30%;
+    min-width: 561px;
+    transform: scaleX(-1);
+  }
+  
+  #security_bd {
+    right: -46.78%;
+    width: 68.9%;
+    height: 28%;
+    min-width: 100px;
+    min-height: 201px;
+  }
+  
+  #security_title,
+  #security_title2,
+  #security_text,
+  #security_hyper {
+    font-family: Tahoma;
+    color: white;
+    position: fixed;
+    z-index: 5;
+  }
+  
+  #security_title {
+    bottom: 22.9%;
+    right: 12%;
+  }
+  
+  #security_title2 {
+    bottom: 20.5%;
+    right: 10%;
+  }
+  
+  #security_text {
+    font-size: 12.5px;
+    color: rgb(128, 128, 128);
+    bottom: 10.3%;
+    right: 2.5%;
+    width: 250px;
+  }
+  
+  #security_hyper {
+    font-size: 12.5px;
+    color: blue;
+    bottom: 8.5%;
+    right: 2%;
+    width: 260px;
+  }
+  
+  .winXP-wrap {
+    position: absolute;
+    border: 1px solid RGB(1, 63, 102);
+    border-radius: 3px;
+    bottom: 4.7%;
+    right: 1.5%;
+    z-index: 5;
+    background: #f6f6f6; /* Simplified gradient */
+  }
+  
+  .winXP-btn {
+    padding: 3px 15px;
+    border: 2px solid transparent;
+    background: transparent;
+  }
+  
+  .winXP-btn:hover,
+  .winXP-btn:focus {
+    outline: 0;
+    border: 2px solid #B9D0F0;
+  }
+  
+  .winXP-btn:active {
+    background: #dad3c9; /* Simplified gradient */
+  }

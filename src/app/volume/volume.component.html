@@ -1,0 +1,10 @@
+<img id="volume" [src]="isMuted ? 'assets/images/volume_muted.png' : 'assets/images/volume_full.png'"
+  height="30" width="31" (click)="sliderToggle()"/>
+
+<div id="volume_slider" [hidden]="isSliderHidden">
+  <img id="volume_background" src="assets/images/volume_background.png" height="220" width="120"/>
+  <span id="volume_background_text1">Volume</span>
+  <span id="volume_background_text2">Mute</span>
+  <div (click)="mute()" id="volume_checkbox" [style.backgroundImage]="isMuted ? 'url(\'assets/images/checkmark_enabled.png\')' : 'url(\'assets/images/checkmark_disabled.png\')'"></div>
+  <input type="range" min="1" max="100" [value]="volumeSliderValue" class="slider" (input)="onVolumeChange($event)">
+</div>

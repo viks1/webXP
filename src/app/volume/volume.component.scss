@@ -1,0 +1,62 @@
+#volume{
+    right: 90px;
+    bottom: 2px;
+    position: fixed;
+    z-index: 10;
+}
+
+#volume_background
+{
+    right: 45px;
+    bottom: 40px;
+    position: fixed;
+    z-index: 2;
+}
+
+#volume_background_text1{
+    font-family: Tahoma;
+    right: 78px;
+    bottom: 225px;
+    position: fixed;
+    z-index: 3;
+}
+
+#volume_background_text2{
+    font-family: Tahoma;
+    right: 91px;
+    bottom: 55px;
+    position: fixed;
+    z-index: 3;
+}
+
+#volume_checkbox{
+    //background-image: url("assets/images/checkmark_disabled.png");
+    background-repeat: no-repeat;
+    right: 129px;
+    bottom: 50px;
+    position: fixed;
+    z-index: 3;
+    width: 25px;
+    height: 25px
+}
+
+.slider {
+    border: 0;
+    right: 50px;
+    bottom: 94px;
+    position: fixed;
+    width: 100px;
+    height: 110px;
+    z-index: 3;
+    transform: rotate(270deg);
+
+}
+/* chrome */
+.slider::-webkit-slider-thumb {
+    cursor: pointer;
+    background-image: url("/images/volume_slider.png");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: none;
+}
