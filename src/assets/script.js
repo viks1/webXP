@@ -2,50 +2,6 @@ window.addEventListener("load", (event) => {
     console.log("page is fully loaded");
 });
 
-
-setInterval(function () {
-    checkMuteVolume(volumeSliderElement);
-
-    if (screen.width < 1436) {
-        document.getElementById("security").style.visibility = 'hidden';
-        document.getElementById("security_window").hidden = true;
-    } else if (screen.width > 1436) {
-        document.getElementById("security").style.visibility = 'visible';
-    }
-
-    if (screen.width < 1125) {
-        document.getElementById("volume").style.visibility = 'hidden';
-        document.getElementById("volume_slider").hidden = true;
-    } else if (screen.width > 1125) {
-        document.getElementById("volume").style.visibility = 'visible';
-    }
-
-    if (screen.width < 672) {
-        document.getElementById("time").style.visibility = 'hidden';
-        document.getElementById("taskbar_end").style.visibility = 'hidden';
-    } else if (screen.width > 672) {
-        document.getElementById("time").style.visibility = 'visible';
-        document.getElementById("taskbar_end").style.visibility = 'visible';
-    }
-
-    if (screen.height < 373 || screen.width < 893) {
-        document.getElementById("contact_title").style.visibility = 'hidden';
-    } else {
-        document.getElementById("contact_title").style.visibility = 'visible';
-    }
-
-}, 100);
-
-function toggleSecurityWindow() {
-    var securityWindow = document.getElementById("security_window");
-    if (securityWindow.hidden) {
-        document.getElementById("volume_slider").hidden = true;
-        securityWindow.hidden = false;
-    } else {
-        securityWindow.hidden = true;
-    }
-}
-
 function enableDragging(elements) {
     elements.forEach(function (el) {
         dragElement(el);

@@ -1,22 +1,19 @@
 #start {
     bottom: 0px;
     left: 0px;
-    background-image: url("/images/unclicked.png");
+    background-image: url("/assets/images/unclicked.png");
     background-size: contain;
-    width: 7.8%;
-    height: auto;
+    width: 150px;
+    height: 27.6px;
     z-index: 10;
     position: fixed;
     background-repeat: no-repeat;
-    min-width: 145px;
-    min-height: 40px;
-
 }
 
 #start:hover{
-    background-image: url("/images/hovered.png");
+    background-image: url("/assets/images/hovered.png");
 }
 
 #start:active{
-    background-image: url("/images/clicked.png");
+    background-image: url("/assets/images/clicked.png");
 }
