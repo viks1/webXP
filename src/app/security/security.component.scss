@@ -1,8 +1,10 @@
 #security {
     position: fixed;
-    right: 6.1%;
-    bottom: 5px;
+    right: 63px;
+    bottom: 3px;
     z-index: 10;
+    height: 23px;
+    width: 23px;
   }
   
   #security_background,
@@ -11,47 +13,40 @@
   #security_br,
   #security_bd {
     position: fixed;
-    bottom: 1.32%;
+    bottom: 15px;
     z-index: 1;
   }
   
   #security_background {
-    right: 0.7%;
-    width: 18%;
-    height: 18%;
-    min-width: 362px;
-    min-height: 122px;
+    right: 15.5px;
+    width: 310px;
+    background-size: contain;
+    height: 175px;
   }
   
   #window_one {
-    right: 0%;
-    width: 19.7%;
-    height: 14%;
-    min-height: 95px;
-    min-width: 397px;
+    right: -2px;
+    bottom: 117px;
+    width: 347px;
+    height: 105px;
+    background-size: contain;  
   }
   
   #security_bl {
-    right: -7.98%;
-    width: 28%;
-    height: 30%;
-    min-width: 556px;
+    right: 325.5px;
+    width: 6.5px;
+    height: 163px;
+    bottom: 27px;
+    background-size: contain; 
   }
   
   #security_br {
-    right: -0.4%;
-    width: 28%;
-    height: 30%;
-    min-width: 561px;
+    right: 11.3px;
+    width: 6.5px;
+    height: 163px;
+    bottom: 27px;
     transform: scaleX(-1);
-  }
-  
-  #security_bd {
-    right: -46.78%;
-    width: 68.9%;
-    height: 28%;
-    min-width: 100px;
-    min-height: 201px;
+    background-size: contain;
   }
   
   #security_title,
@@ -65,28 +60,30 @@
   }
   
   #security_title {
-    bottom: 22.9%;
-    right: 12%;
+    bottom: 193px;
+    right: 210px;
+    font-size: 14px;
   }
   
   #security_title2 {
-    bottom: 20.5%;
-    right: 10%;
+    bottom: 172px;
+    right: 195px;
+    font-size: 12px;
   }
   
   #security_text {
-    font-size: 12.5px;
+    font-size: 10.5px;
     color: rgb(128, 128, 128);
-    bottom: 10.3%;
-    right: 2.5%;
+    bottom: 81px;
+    right: 10px;
     width: 250px;
   }
   
   #security_hyper {
-    font-size: 12.5px;
+    font-size: 11px;
     color: blue;
-    bottom: 8.5%;
-    right: 2%;
+    bottom: 65px;
+    right: 0px;
     width: 260px;
   }
   
@@ -94,8 +91,8 @@
     position: absolute;
     border: 1px solid RGB(1, 63, 102);
     border-radius: 3px;
-    bottom: 4.7%;
-    right: 1.5%;
+    bottom: 30px;
+    right: 23px;
     z-index: 5;
     background: #f6f6f6; 
   }

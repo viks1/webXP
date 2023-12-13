@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { VolumeComponent } from '../volume/volume.component';
 
 @Component({
   selector: 'app-security',
@@ -8,10 +9,12 @@ import { Component } from '@angular/core';
   styleUrl: './security.component.scss'
 })
 export class SecurityComponent {
+  volumeComponent = new VolumeComponent;
   isSecurityWindowHidden = true;
 
   toggleSecurityWindow() {
     this.isSecurityWindowHidden = !this.isSecurityWindowHidden;
+    this.volumeComponent.isSliderHidden=true;
   }
 
   hideSecurityWindow() {

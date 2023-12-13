@@ -11,13 +11,15 @@ export class TimeComponent implements OnInit {
   currentTime: string = '';
 
   ngOnInit() {
-    
-  }
+    //setInterval(() => {
+      //this.updateTime();
+    //},60000 );
+    }
 
   updateTime() {
     try {
-      const date = new Date();
-      this.currentTime = date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+      const vreme = new Date();
+      this.currentTime = vreme.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
     } catch (error) {
       console.error('Error updating time:', error);
     }
