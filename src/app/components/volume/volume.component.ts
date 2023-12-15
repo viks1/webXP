@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Output } from '@angular/core';
+import { TrayWindowsService } from '../../services/tray-windows/tray-windows.service';
 
 @Component({
   selector: 'app-volume',
@@ -8,13 +9,15 @@ import { Component } from '@angular/core';
   styleUrl: './volume.component.scss'
 })
 export class VolumeComponent {
-  isSliderHidden: boolean = true;
+
+  constructor(private TrayWindowsService : TrayWindowsService){}
+
   isMuted: boolean = false;
   volumeSliderValueInit: number = 100;
   volumeSliderValue: number = 100;
 
-  sliderToggle(): void {
-    this.isSliderHidden = !this.isSliderHidden;
+  public volumeWindowToggle(): void {
+    this.TrayWindowsService.volumeWindowToggle();
   }
 
   mute(): void {
@@ -30,7 +33,7 @@ export class VolumeComponent {
   }
 
   onVolumeChange(event: Event): void {
-    console.log("yea");
+    console.log("yea"); 
     this.volumeSliderValue = Number((event.target as HTMLInputElement).value);
     if (this.volumeSliderValue<=1){
       this.isMuted=true;
@@ -39,4 +42,9 @@ export class VolumeComponent {
       this.isMuted=false;
     }
   }
+
+  getIsMuted(){
+     return this.isMuted;
+  }
+
 }

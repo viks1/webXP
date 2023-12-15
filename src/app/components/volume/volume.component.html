@@ -1,7 +1,7 @@
 <img id="volume" [src]="isMuted ? 'assets/images/volume_muted.png' : 'assets/images/volume_full.png'"
-  height="50px" width="30px" (click)="sliderToggle()"/>
+  height="50px" width="30px" (click)="volumeWindowToggle()"/>
 
-<div id="volume_slider" [hidden]="isSliderHidden">
+<div id="volume_slider" [hidden]="true">
   <img id="volume_background" src="assets/images/volume_background.png" height="220px" width="120px"/>
   <span id="volume_background_text1">Volume</span>
   <span id="volume_background_text2">Mute</span>

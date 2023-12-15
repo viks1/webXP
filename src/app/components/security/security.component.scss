@@ -11,44 +11,49 @@
   #window_one,
   #security_bl,
   #security_br,
-  #security_bd {
+  #security_bb {
     position: fixed;
-    bottom: 15px;
+    bottom: 35px;
     z-index: 1;
+    background-size: contain;
   }
   
   #security_background {
     right: 15.5px;
     width: 310px;
-    background-size: contain;
     height: 175px;
   }
   
   #window_one {
     right: -2px;
-    bottom: 117px;
+    bottom: 137px;
     width: 347px;
     height: 105px;
-    background-size: contain;  
   }
   
   #security_bl {
     right: 325.5px;
     width: 6.5px;
-    height: 163px;
-    bottom: 27px;
-    background-size: contain; 
+    height: 180px;
+    bottom: 30px;
   }
   
   #security_br {
     right: 11.3px;
     width: 6.5px;
-    height: 163px;
-    bottom: 27px;
+    height: 180px;
+    bottom: 30px;
     transform: scaleX(-1);
-    background-size: contain;
   }
   
+  #security_bb{
+    right: 168.5px;
+    width: 6.5px;
+    height: 318px;
+    bottom: -127px;
+    rotate: 270deg;
+  }
+
   #security_title,
   #security_title2,
   #security_text,
@@ -60,13 +65,13 @@
   }
   
   #security_title {
-    bottom: 193px;
+    bottom: 213px;
     right: 210px;
     font-size: 14px;
   }
   
   #security_title2 {
-    bottom: 172px;
+    bottom: 193px;
     right: 195px;
     font-size: 12px;
   }
@@ -74,7 +79,7 @@
   #security_text {
     font-size: 10.5px;
     color: rgb(128, 128, 128);
-    bottom: 81px;
+    bottom: 101px;
     right: 10px;
     width: 250px;
   }
@@ -82,7 +87,7 @@
   #security_hyper {
     font-size: 11px;
     color: blue;
-    bottom: 65px;
+    bottom: 85px;
     right: 0px;
     width: 260px;
   }
@@ -91,7 +96,7 @@
     position: absolute;
     border: 1px solid RGB(1, 63, 102);
     border-radius: 3px;
-    bottom: 30px;
+    bottom: 50px;
     right: 23px;
     z-index: 5;
     background: #f6f6f6; 
