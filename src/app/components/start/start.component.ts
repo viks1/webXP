@@ -1,5 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { start } from 'repl';
+import { OpenCloseWindowsService } from '../../services/open-close-windows/open-close-windows.service';
 import { StartMenuComponent } from '../start-menu/start-menu.component';
 
 @Component({
@@ -10,13 +11,9 @@ import { StartMenuComponent } from '../start-menu/start-menu.component';
   styleUrl: './start.component.scss'
 })
 export class StartComponent {
-  @ViewChild(StartMenuComponent, { static: false }) startMenuComponent!: StartMenuComponent;
-  menuHidden = true;
+  constructor(private openCloseWindowService : OpenCloseWindowsService){}
 
   toggleMenu() {
-    this.menuHidden = !this.menuHidden;
-    if (this.startMenuComponent) {
-      this.startMenuComponent.isMenuHidden = this.menuHidden;
-    }
+    this.openCloseWindowService.toggleMenu();
   }
 }

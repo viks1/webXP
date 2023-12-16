@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-time',
@@ -7,21 +7,24 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './time.component.html',
   styleUrl: './time.component.scss'
 })
-export class TimeComponent implements OnInit {
+export class TimeComponent{
   currentTime: string = '';
+  
+  ngOnInit(): void {
+    this.updateTime();
+  }
 
-  ngOnInit() {
-    //setInterval(() => {
-      //this.updateTime();
-    //},60000 );
-    }
+  updateTime(): void {
+    const now = new Date();
+    const hours = now.getHours();
+    const minutes = now.getMinutes();
+    const amPm = hours >= 12 ? 'PM' : 'AM';
+    const displayHours = hours % 12 || 12; // Convert 0 to 12
 
-  updateTime() {
-    try {
-      const vreme = new Date();
-      this.currentTime = vreme.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-    } catch (error) {
-      console.error('Error updating time:', error);
-    }
+    this.currentTime = `${displayHours}:${this.padZero(minutes)} ${amPm}`;
+  }
+
+  padZero(value: number): string {
+    return value < 10 ? `0${value}` : `${value}`;
   }
 }

@@ -1,0 +1,11 @@
+#welcome_screen{
+    width: 100%;
+    height: 100%;
+    z-index: 495;
+    position: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("/assets/images/welcome.png");
+    background-color: rgb(1 47 156);
+}

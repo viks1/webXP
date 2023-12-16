@@ -1,10 +1,11 @@
 #security {
     position: fixed;
-    right: 63px;
+    right: 65px;
     bottom: 3px;
     z-index: 10;
     height: 23px;
     width: 23px;
+    cursor: pointer;
   }
   
   #security_background,
@@ -25,33 +26,33 @@
   }
   
   #window_one {
-    right: -2px;
-    bottom: 137px;
-    width: 347px;
-    height: 105px;
+    right: 0px;
+    bottom: 144px;
+    width: 343px;
+    height: 95px;
   }
   
   #security_bl {
-    right: 325.5px;
-    width: 6.5px;
+    right: 324.5px;
+    width: 5px;
     height: 180px;
     bottom: 30px;
   }
   
   #security_br {
     right: 11.3px;
-    width: 6.5px;
+    width: 4px;
     height: 180px;
     bottom: 30px;
     transform: scaleX(-1);
   }
   
   #security_bb{
-    right: 168.5px;
-    width: 6.5px;
-    height: 318px;
-    bottom: -127px;
+    right: 168.3px;
+    width: 5.6px;
+    height: 317px;
     rotate: 270deg;
+    bottom: -125.6px;
   }
 
   #security_title,
@@ -66,8 +67,8 @@
   
   #security_title {
     bottom: 213px;
-    right: 210px;
-    font-size: 14px;
+    right: 218px;
+    font-size: 13px;
   }
   
   #security_title2 {
@@ -87,7 +88,7 @@
   #security_hyper {
     font-size: 11px;
     color: blue;
-    bottom: 85px;
+    bottom: 80px;
     right: 0px;
     width: 260px;
   }
@@ -96,7 +97,7 @@
     position: absolute;
     border: 1px solid RGB(1, 63, 102);
     border-radius: 3px;
-    bottom: 50px;
+    bottom: 38px;
     right: 23px;
     z-index: 5;
     background: #f6f6f6; 
@@ -106,6 +107,7 @@
     padding: 3px 15px;
     border: 2px solid transparent;
     background: transparent;
+    cursor: pointer;
   }
   
   .winXP-btn:hover,

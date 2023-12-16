@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { OpenCloseWindowsService } from '../../services/open-close-windows/open-close-windows.service';
 
 @Component({
   selector: 'app-projects-window',
@@ -8,15 +9,13 @@ import { Component } from '@angular/core';
   styleUrl: './projects-window.component.scss'
 })
 export class ProjectsWindowComponent {
+constructor(private openCloseWindowsService : OpenCloseWindowsService){}
 
-  hideProjectsWindow() :void{
-  var projectsScreen = document.getElementById("projects_window");
-  if (projectsScreen){
-      projectsScreen.hidden = true;
+  closeProjectsWindow():void{
+    this.openCloseWindowsService.projectsWindowToggle();
   }
-}
-
+  
   openSite(url: string) {
-  window.open(url);
+  this.openCloseWindowsService.openSite(url)
 }
 }

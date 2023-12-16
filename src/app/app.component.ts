@@ -10,14 +10,16 @@ import { TimeComponent } from "./components/time/time.component";
 import { VolumeComponent } from "./components/volume/volume.component";
 import { ProjectsWindowComponent } from "./components/projects-window/projects-window.component";
 import { ContactWindowComponent } from "./components/contact-window/contact-window.component";
+import { LoadingComponent } from './components/loading/loading.component';
+import { LoginComponent } from "./components/login/login.component";
 
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss',
-    imports: [CommonModule, RouterOutlet, TaskbarComponent, DesktopComponent, StartComponent, StartMenuComponent, SecurityComponent, TimeComponent, VolumeComponent, ProjectsWindowComponent, ContactWindowComponent]
+    imports: [CommonModule, RouterOutlet, TaskbarComponent, DesktopComponent, StartComponent, StartMenuComponent, SecurityComponent, TimeComponent, VolumeComponent, ProjectsWindowComponent, ContactWindowComponent, LoadingComponent, LoginComponent]
 })
 export class AppComponent {
-  title = 'webXP';
+  title = 'viks1/webXP';
 }

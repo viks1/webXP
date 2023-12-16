@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { OpenCloseWindowsService } from '../../services/open-close-windows/open-close-windows.service';
 
 @Component({
   selector: 'app-start-menu',
@@ -8,24 +9,22 @@ import { Component, Input } from '@angular/core';
   styleUrl: './start-menu.component.scss'
 })
 export class StartMenuComponent {
-  @Input() isMenuHidden: boolean = false;
-  
-  showAboutInfo(): void {
-    const aboutScreen = document.getElementById('contact_info');
-    if (aboutScreen) {
-      aboutScreen.hidden = false;
+  constructor(private openCloseWindowsService : OpenCloseWindowsService){}
+    
+    showContactsWindow(): void {
+    if (document.getElementById("contact_info")?.hidden==true){
+    this.openCloseWindowsService.contactsWindowToggle();
     }
   }
 
   showProjectsWindow(): void {
-    const projectsScreen = document.getElementById('projects_window');
-    if (projectsScreen) {
-      projectsScreen.hidden = false;
+    if (document.getElementById("projects_window")?.hidden==true){
+    this.openCloseWindowsService.projectsWindowToggle();
     }
   }
 
   openSite(url: string) {
-    window.open(url);
+    this.openCloseWindowsService.openSite(url);
 }
 
   reloadPage(): void{

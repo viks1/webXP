@@ -33,7 +33,7 @@
               "src/styles.scss"
             ],
             "scripts": [
-              "src/assets/script.js"
+              "src/app/services/drag/drag.js"
             ],
             "server": "src/main.server.ts",
             "prerender": true,

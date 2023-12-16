@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { OpenCloseWindowsService } from '../../services/open-close-windows/open-close-windows.service';
 
 @Component({
   selector: 'app-contact-window',
@@ -8,12 +9,9 @@ import { Component } from '@angular/core';
   styleUrl: './contact-window.component.scss'
 })
 export class ContactWindowComponent {
+  constructor(private openCloseWindowService : OpenCloseWindowsService){}
 
-  hideAboutInfo(): void {
-    const aboutScreen = document.getElementById("contact_info");
-    if (aboutScreen) {
-      aboutScreen.hidden = true;
-    }
+  public hideContactWindow(): void {
+    this.openCloseWindowService.contactsWindowToggle();
   }
-
 }

@@ -1,126 +1,111 @@
-.menu {
+.menu{
+    z-index: 400;
     position: fixed;
-    bottom: -3.2%;
-    left: 0%;
-    z-index: 9;
-    width: 50%;
-    height: 50%;
-    min-height: 500px;
-    max-width: 500px;
+}
+
+#pp,#startmenu_picture,#gitLogo,#about_me_icon,#world_icon,#discord_icon,#restart_image{
+    background-size: contain;
+    position: fixed;
 }
 
 #pp{
-    width: 2.5%;
-    height: 4.5%;
+    width: 30px;
+    height: 30px;
     border:3px;
     border-style: solid;
     border-color: white;
     border-radius: 5px;
-    bottom: 41.3%;
-    left: 0.5%;
+    bottom: 359px;
+    left: 12px;
     position: fixed;
 }
 
 #username{
-    bottom: 42.3%;
-    left: 4%;
+    bottom: 366px;
+    left: 56px;
     position: fixed;
     font-family: Tahoma;
-    font-size: 25px;
+    font-size: 20px;
     color:white;
 }
 
 #startmenu_picture{
-    width: 25%;
-    height: 43.7%;
-    position: fixed;
-    bottom: 3%;
+    width: 360px;
+    height: 377px;
+    bottom: 27px;
 }
 
 #git{
-    bottom: 37.3%;
-    left: 3.5%;
+    bottom: 322px;
+    left: 54px;
     position: fixed;
     font-family: Tahoma;
     text-decoration: underline;
-    font-size: 17px;
+    font-size: 15px;
     color:black;
+    cursor: pointer;
 }
 
 #gitLogo{
-    width: 2%;
-    height: 4%;
+    width: 27px;
+    height: 27px;
+    left: 20px;
+    bottom: 317px;
     position: fixed;
-    left: 1%;
-    bottom: 36.5%
 }
 
 #about_me{
-    bottom: 34.3%;
-    left: 3.5%;
+    bottom: 296px;
+    left: 54px;
     position: fixed;
     font-family: Tahoma;
     text-decoration: underline;
-    font-size: 17px;
+    font-size: 15px;
     color:black;
+    cursor: pointer;
 }
 
 #about_me_icon{
-    width: 45%;
-    height: 50%;
+    width: 24px;
+    height: 24px;
+    left: 25px;
+    bottom: 292px;
     position: fixed;
-    left: -41.5%;
-    bottom: -13.5%;
 }
 
-#nullobjects{
-    bottom: 37.3%;
-    left: 15.5%;
+#website{
+    bottom: 323px;
+    left: 228px;
     position: fixed;
     font-family: Tahoma;
-    font-size: 18px;
+    font-size: 16px;
+    text-decoration: underline;
     color:royalblue;
+    cursor: pointer;
 }
 
-#world_icon{
-    width: 2%;
-    height: 3%;
+#website_icon{
+    width: 25px;
+    height: 25px;
+    left: 198px;
+    bottom: 320px;
     position: fixed;
-    left: 13%;
-    bottom: 37%;
-}
-
-#discord{
-    bottom: 34.3%;
-    left: 15.5%;
-    position: fixed;
-    font-family: Tahoma;
-    font-size: 18px;
-    color:royalblue;
-}
-
-#discord_icon{
-    width: 2%;
-    height: 3%;
-    position: fixed;
-    left: 13%;
-    bottom: 34%;
 }
 
 #restart_image{
-    width: 2%;
-    height: 3%;
-    position: fixed;
-    left: 18.7%;
-    bottom: 3.4%;
+    width: 27px;
+    height: 27px;
+    left: 260px;
+    bottom: 30px;
 }
 
 #restart_text{
-    bottom: 4%;
-    left: 21%;
+    bottom: 35px;
+    left: 292px;
     position: fixed;
     font-family: Tahoma;
-    font-size: 17px;
+    font-size: 16px;
     color:white;
     text-decoration: underline;
+    cursor: pointer;
 }

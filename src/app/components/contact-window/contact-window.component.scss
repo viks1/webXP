@@ -1,56 +1,59 @@
 #contact_info{
-    width: 12%;
-    height: 10%;
+    width: 220px;
+    height: 85px;
     background-color: #e8e7de;
     position: absolute;
-    top: 10%;
-    left: 42.5%;
+    top: 80px;
+    left: 674px;
     z-index: 5;
 }
 
 #contact_bl{
-    height: 180%;
-    width: 200%;
+    height: 90px;
+    width: 4px;
     position: absolute;
-    bottom: -17.5%;
-    left: -8.4%;
+    bottom: -5px;
+    left: -2.5px;
 }
 #contact_br{
-    height: 180%;
-    width: 200%;
+    height: 90px;
+    width: 4px;
     position: absolute;
-    bottom:-17.5%;
-    right: -8.4%;
+    bottom: -5px;
+    right: -2px;
     transform: scaleX(-1);
 }
 #contact_bd{
-    height: 150%;
-    width: 380%;
+    height: 224px;
+    width: 5px;
     position: absolute;
-    bottom: -15%;
-    left: -18%;
+    bottom: -114.25px;
+    left: 107.3px;
+    rotate: 270deg;
 }
 #contact_top{
-    height: 100%;
-    width: 110%;
+    height: 90px;
+    width: 242px;
     position: absolute;
-    top: -30.6%;
+    top: -25px;
     z-index: 6;
-    left: -5.3%;
+    left: -11.7px;
 }
 
 #contact_title{
     font-family: Tahoma;
     position: absolute;
     color: white;
-    left: 2%;
-    top: -20%;
+    font-size: 13px;
+    left: 5px;
+    top: -15px;
     z-index: 7;
 }
 #name{
     font-family: Tahoma;
     position: absolute;
     color: black;
+    font-size: 13px;
     left: 3%;
     top: 15%;
     z-index: 7;
@@ -60,9 +63,10 @@
 #email{
     font-family: Tahoma;
     position: absolute;
+    font-size: 13px;
     color: black;
     left: 3%;
-    top: 35%;
+    top: 40%;
     z-index: 7;
     font-weight: bold;
 }
@@ -72,18 +76,20 @@
     font-weight: bold;
     position: absolute;
     text-decoration: underline;
+    font-size: 13px;
     color: blue;
     left: 3%;
     top: 65%;
     z-index: 7;
 }
 
-#close2{
+#close1{
     position: absolute;
     bottom: 100%;
-    left: 95.8%;
-    width: 4%;
-    height: 4%;
-    z-index: 3;
+    left: 201px;
+    width: 18px;
+    height: 16px;
     margin: 0;
+    z-index: 8;
+    cursor: pointer;
 }

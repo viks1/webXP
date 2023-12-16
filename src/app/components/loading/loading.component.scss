@@ -1,0 +1,72 @@
+.windows__bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 500;
+  background: black;
+}
+.windows__bg .windows__bg--inner {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%) scale(.75);
+  -webkit-transform: slale(.75) translateY(-50%) translateX(-50%);
+  animation:1s linear infinite;
+}
+
+.windows__bg .windows__name {
+  color: white;
+  font-family: sans-serif;
+  clear: both;
+  top: -3.4vw;
+  position: relative;
+}
+.windows__bg .windows__name p {
+  font-size: 1.8vw;
+}
+.windows__bg .windows__name .windows__name--inner{
+  font-size: 6vw;
+  font-weight: bold;
+}
+.windows__bg .windows__name .windows__name--inner span {
+  color: #c3441d;
+  font-size: 4.8vw;
+  bottom: 2.8vw;
+  position: relative;
+}
+.windows__bg .windows__bg--loading {
+  width: 20vw;
+  height: 2.5vw;
+  border: .2vw solid #878787;
+  margin: 2.5vw auto 0;
+  border-radius: .5vw;
+  position: relative;
+  overflow: hidden;
+}
+.windows__bg .windows__bg--loading ul {
+  font-size: 0;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: -2.6vw;
+  animation:2s linear infinite loading;
+  width: 3.9vw;
+}
+.windows__bg .windows__bg--loading ul li {
+  width: 1.2vw;
+  height: 2.0vw;
+  display: inline-block;
+  background: linear-gradient(180deg,#09112d,#8197cd 20%,#8197cd 40%,#5d62ab 60%,#4158a6 70%,#4158a6 80%,#204399 90%,#1c2954);
+  margin: 0 .1vw 0 0;
+}
+
+.windows__name{
+  left: 25px;
+}
+
+@keyframes loading { 
+  0% { left: -2.6vw; } 
+  100% { left: 20vw;}
+}
