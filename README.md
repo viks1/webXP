@@ -3,7 +3,7 @@
 
 this project is my portfolio styled with a Windows XP theme and created using Angular/Typescript.
 # Try it out:
-[viks1.github.io/webXP](https://viks1.itch.io/through-the-darkness)  
+[viks1.github.io/webXP](https://viks1.github.io/webXP)  
 or open up the project and run `ng serve` in the terminal
 # Contribute
 if you encounter any issues while using the website, you can submit a request.
