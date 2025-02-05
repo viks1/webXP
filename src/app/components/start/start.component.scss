@@ -1,7 +1,7 @@
 #start {
     bottom: 0px;
     left: 0px;
-    background-image: url("/assets/images/unclicked.png");
+    background-image: url("../../../assets/images/unclicked.png");
     background-size: contain;
     width: 100px;
     height: 27.6px;
@@ -11,9 +11,9 @@
 }
 
 #start:hover{
-    background-image: url("/assets/images/hovered.png");
+    background-image: url("../../../assets/images/hovered.png");
 }
 
 #start:active{
-    background-image: url("/assets/images/clicked.png");
+    background-image: url("../../../assets/images/clicked.png");
 }
